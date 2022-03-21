@@ -3,6 +3,7 @@ local response = syn.request({
     Method = "GET"
 })
 local folder = makefolder("Audio Writer")
+local body = ""
 
 
 for i,v in pairs(response) do
@@ -13,7 +14,11 @@ for i,v in pairs(response) do
             end
         end
     end
-    if i == "Body" and _G.filename ~= nil then
-        writefile("Exxen/".._G.filename,v)
+    if i == "Body" then
+        body = v
     end
 end
+
+wait()
+
+writefile("Exxen/".._G.filename,body)
