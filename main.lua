@@ -20,5 +20,14 @@ for i,v in pairs(response) do
 end
 
 wait()
-
-writefile("Exxen/".._G.filename,body)
+local audioPath = "Exxen/".._G.filename
+writefile(audioPath,body)
+wait()
+if isfile(audioPath) then 
+    local audioPath = getsynasset(audioPath)
+    setclipboard(audioPath)
+    local audioinst = Instance.new("Sound")
+    audioinst.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+    audioinst.SoundId = audioPath
+    audioinst:Play()
+end
