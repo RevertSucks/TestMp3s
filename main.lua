@@ -22,7 +22,7 @@ end
 wait()
 local audioPath = "Exxen/".._G.filename
 writefile(audioPath,body)
-wait()
+wait(1)
 if isfile(audioPath) then 
     local audioPath = getsynasset(audioPath)
     setclipboard(audioPath)
