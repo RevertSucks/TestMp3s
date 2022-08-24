@@ -13,4 +13,4 @@ and it should now look like this
 _G.providedurl = "https://raw.githubusercontent.com/RevertSucks/TestMp3s/main/Songs/UGK.mp3"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RevertSucks/TestMp3s/main/main.lua"))()
 ```
-and thats it! execute. if you want to change the song all you have to do is go to the songs folder click a song, and right click open raw and copy link. will soon provide video for help
+and thats it! execute. if you want to change the song all you have to do is go to the songs folder click a song, and right click download and copy link. will soon provide video for help
